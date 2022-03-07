@@ -1,0 +1,215 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COVER PAGE OF MASTER THESIS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% What you should change
+\newcommand{	\ThesisTitle				}{	MSc Thesis Title			}
+\newcommand{	\ThesisSubtitle				}{	MSc Thesis Subtitle			}
+\newcommand{	\AuthorName					}{	Author's Full name			}
+\newcommand{	\GroupLink					}{	http://researchgroup.university.com}		
+\newcommand{	\GroupName					}{	Research Group name			} 
+\newcommand{	\MasterDegree				}{	Master Degree name			}
+\newcommand{	\SupervisorName				}{	Supervisor's Full name		}
+\newcommand{	\CoSupervisorName			}{	Co-supervisor's full name	}
+\newcommand{	\ChairpersonName			}{	Chairperson's full name		}
+\newcommand{	\ExaminationSupervisorName	}{	Supervisor's Full name		}
+\newcommand{	\CommitteeFirstMemberName	}{	Supervisor's Full name		}
+\newcommand{	\CommitteeSecondMemberName	}{	Supervisor's Full name		}
+
+\newcommand{	\Month	}{	Month		}
+\newcommand{	\Year	}{	Year		}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHANGE WITH CARE BELLOW THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Simplifying commands
+\newcommand{\coverThesis}{Thesis to obtain the Master of Science Degree in} 
+\newcommand{\coverSupervisors}{Supervisors}
+\newcommand{\coverExaminationCommittee}{Examination Committee}
+\newcommand{\coverChairperson}{Chairperson} 
+\newcommand{\coverSupervisor}{Supervisor} 
+\newcommand{\coverMemberCommittee}{Members of the Committee} 
+
+%Font Commands (Large, Medium and Small)
+\newcommand{\FontLn}[1]{\fontsize{16pt}{16pt}\selectfont 		#1		}
+\newcommand{\FontLb}[1]{\fontsize{16pt}{16pt}\selectfont   \textbf{#1}	}
+
+\newcommand{\FontMn}[1]{\fontsize{14pt}{14pt}\selectfont 		#1		}
+\newcommand{\FontMb}[1]{\fontsize{14pt}{14pt}\selectfont   \textbf{#1}	}
+
+\newcommand{\FontSn}[1]{\fontsize{12pt}{12pt}\selectfont 		#1		}
+\newcommand{\FontSb}[1]{\fontsize{12pt}{12pt}\selectfont   \textbf{#1}	}
+
+\newcommand{\HRule}{\rule{.9\linewidth}{.6pt}} % New command to make the lines in the title page
+
+%Start of the cover page
+
+\thispagestyle {empty}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COVER PAGE OF MASTER THESIS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%IST Logo
+\includegraphics[viewport = 5.0cm 10.5cm 0cm 0cm ,scale = 0.29]{./inputs/01_Cover_Page/IST_A_CMYK_POS}
+
+\begin{center}
+	
+	%----------------------------------
+	% Figure (Image or plot)
+	\vspace{2.2cm}
+	\begin{center}
+		
+		\includegraphics[height=20mm]{./inputs/01_Cover_Page/solomon}
+		\vspace{4mm}
+		
+		%Or just leave the image space black
+		%\vspace{20mm}
+		
+	\end{center}
+	
+	% Thesis Title
+	\HRule \\[0.4cm] % Horizontal line
+	{\huge \bfseries \ThesisTitle \par}\vspace{0.4cm} 
+	\HRule \\[0.8cm] % Horizontal line
+	
+	%Author name 
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{flushleft} 	\large
+			\emph{Author:}	\\
+			\AuthorName 		
+		\end{flushleft}
+	\end{minipage}
+	%Supervisors name
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{flushright} \large
+			\emph{Supervisor:} \\
+			\SupervisorName 	\\
+			\CoSupervisorName 
+		\end{flushright}
+	\end{minipage}\\
+	
+	\vspace{1.4cm}
+	
+	%Group and Department
+	\large \textit{Research work performed at}\\[0.3cm]
+	\href{\GroupLink}{\GroupName}\\[0.3cm] 
+	 \textit{to obtain a Master of Science Degree in} \\[0.3cm]
+	 {\FontMb{\MasterDegree}}
+	\vfill
+	
+	%Examination Commitee
+	\vspace{1.0cm}
+	{\FontMb{\coverExaminationCommittee}} \\
+	\vspace{0.3cm}
+	{
+		\FontSn{ %
+			\begin{tabular}{rl}
+				\coverChairperson:    		& \ChairpersonName  			\\
+				\coverSupervisor:     		& \ExaminationSupervisorName   	\\
+				Member of the Committee:	& \CommitteeFirstMemberName 	\\
+				& \CommitteeSecondMemberName
+		\end{tabular} } \\
+	}
+	
+	%Date of oral examination
+	\vspace{1.5cm}
+	{\FontMb{ \Month \& \Year }} \\ 
+	
+	\vfill
+\end{center}
+
+
+\begin{comment}
+
+content...
+
+
+%Use Helvetica Font
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+
+\def\FontLn{% 16 pt normal
+	\usefont{T1}{phv}{m}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontLb{% 16 pt bold
+	\usefont{T1}{phv}{b}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontMn{% 14 pt normal
+	\usefont{T1}{phv}{m}{n}\fontsize{14pt}{14pt}\selectfont}
+\def\FontMb{% 14 pt bold
+	\usefont{T1}{phv}{b}{n}\fontsize{14pt}{14pt}\selectfont}
+\def\FontSn{% 12 pt normal
+	\usefont{T1}{phv}{m}{n}\fontsize{12pt}{12pt}\selectfont}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COVER PAGE OF MASTER THESIS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle {empty}
+
+%IST Logo
+\includegraphics[viewport = 5.0cm 10.5cm 0cm 0cm ,scale = 0.29]{./inputs/01_Cover_Page/IST_A_CMYK_POS}
+%\includegraphics[viewport = 9.5cm 11cm 0cm 0cm ,scale = 0.29]{Thesis_Template/inputs/01_Cover_Page/IST_A_CMYK_POS}
+
+\begin{center}
+	
+	% Figure (Image or plot)
+	%\vspace{2.0cm}
+	%\begin{center}
+	%\includegraphics[height=40mm]{Thesis_Template/inputs/01_Cover_Page/solomon}
+	%\end{center}
+	
+	%Because I don't have a figure
+	\vspace{.15\textheight}
+	
+	% Thesis Title
+	\vspace{1.0cm}
+	{\FontLb Towards Time Ordered Parton Showers} \\ 
+	\vspace{0.2cm}
+	%{\FontMn According to IST Regulations} \\
+	\vspace{0.9cm}
+	
+	%Author name
+	\vspace{0.6cm}
+	{\FontMb André Carvalho Martins Barreta Cordeiro} \\ 
+	
+	%Degree
+	\vspace{2.0cm}
+
+	%{\FontSn \coverThesis} \\
+	\vspace{0.3cm}
+	{\FontLb Engineering Physics}  \\
+	
+	%Supervisors
+	\vspace{1.0cm}
+	{\FontSn %
+		\begin{tabular}{ll}
+			\coverSupervisors: & Prof. Liliana Marisa Cunha Apolinário \\
+			& Prof. José Guilherme Teixeira de Almeida Milhano
+	\end{tabular} } \\
+	
+	%Examination Commitee
+	\vspace{1.0cm}
+	{\FontMb \coverExaminationCommittee} \\
+	\vspace{0.3cm}
+	{\FontSn %
+		\begin{tabular}{rl}
+			\coverChairperson:    & Prof. Maria Teresa Haderer de la Peña Stadler  \\
+			\coverSupervisor:     & Prof. Liliana Marisa Cunha Apolinário   \\
+			%	\coverMemberCommittee:  & Dr. Fabio Alejandro Domínguez González
+			Member of the Committee:  & Dr. Fabio Alejandro Domínguez González
+	\end{tabular} } \\
+	
+	%Date of oral examination
+	\vspace{1.5cm}
+	{\FontMb November 2021} \\ 
+	
+	
+\end{center}
+\end{comment}

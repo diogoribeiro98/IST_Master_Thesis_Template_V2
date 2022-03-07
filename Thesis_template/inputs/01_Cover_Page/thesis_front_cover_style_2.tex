@@ -1,0 +1,112 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COVER PAGE OF MASTER THESIS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% What you should change
+\newcommand{	\ThesisTitle				}{	MSc Thesis Title			}
+\newcommand{	\ThesisSubtitle				}{	MSc Thesis Subtitle			}
+\newcommand{	\AuthorName					}{	Author's Full name			}
+\newcommand{	\MasterDegree				}{	Master Degree name			}
+\newcommand{	\SupervisorName				}{	Supervisor's Full name		}
+\newcommand{	\CoSupervisorName			}{	Co-supervisor's full name	}
+\newcommand{	\ChairpersonName			}{	Chairperson's full name		}
+\newcommand{	\ExaminationSupervisorName	}{	Supervisor's Full name		}
+\newcommand{	\CommitteeFirstMemberName	}{	Supervisor's Full name		}
+\newcommand{	\CommitteeSecondMemberName	}{	Supervisor's Full name		}
+
+\newcommand{	\Month	}{	Month		}
+\newcommand{	\Year	}{	Year		}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHANGE WITH CARE BELLOW THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Simplifying commands
+\newcommand{\coverThesis}{Thesis to obtain the Master of Science Degree in} 
+\newcommand{\coverSupervisors}{Supervisors}
+\newcommand{\coverExaminationCommittee}{Examination Committee}
+\newcommand{\coverChairperson}{Chairperson} 
+\newcommand{\coverSupervisor}{Supervisor} 
+\newcommand{\coverMemberCommittee}{Members of the Committee} 
+
+%Font Commands (Large, Medium and Small)
+\newcommand{\FontLn}[1]{\fontsize{16pt}{16pt}\selectfont 		#1		}
+\newcommand{\FontLb}[1]{\fontsize{16pt}{16pt}\selectfont   \textbf{#1}	}
+
+\newcommand{\FontMn}[1]{\fontsize{14pt}{14pt}\selectfont 		#1		}
+\newcommand{\FontMb}[1]{\fontsize{14pt}{14pt}\selectfont   \textbf{#1}	}
+
+\newcommand{\FontSn}[1]{\fontsize{12pt}{12pt}\selectfont 		#1		}
+\newcommand{\FontSb}[1]{\fontsize{12pt}{12pt}\selectfont   \textbf{#1}	}
+
+%Start of the cover page
+
+\thispagestyle {empty}
+
+%IST Logo
+\includegraphics[viewport = 9.5cm 11cm 0cm 0cm ,scale = 0.29]{./inputs/01_Cover_Page/IST_A_CMYK_POS}
+
+\begin{center}
+	
+	%----------------------------------
+	% Figure (Image or plot)
+	\vspace{.08\textheight}
+	\begin{center}
+		
+		%Change image to taste
+		\includegraphics[height=.13\textheight]{./inputs/01_Cover_Page/solomon}
+		
+		%Or just leave the image space black
+		%\vspace{.13\textheight}
+		
+	\end{center}
+	\vspace{.025\textheight}
+	
+
+	% Thesis Title
+	\vspace{1.0cm}
+	{\FontLb{ \ThesisTitle}  } \\ 
+	\vspace{0.2cm}
+	{\FontMn{\ThesisSubtitle}} \\
+	\vspace{0.9cm}
+	
+	%Author name
+	\vspace{0.6cm}
+	{\FontMb{ \AuthorName}} \\ 
+	
+	%Degree name
+	\vspace{2.0cm}
+	{\FontSn{\coverThesis}} \\
+	\vspace{0.3cm}
+	{\FontLb{\MasterDegree}}  \\
+	
+	%Supervisors
+	\vspace{1.0cm}
+	{
+		\FontSn{ %
+		\begin{tabular}{ll}
+			\coverSupervisors: 	& \SupervisorName \\
+								& \CoSupervisorName
+		\end{tabular} } \\
+	}
+
+	%Examination Commitee
+	\vspace{1.0cm}
+	{\FontMb{\coverExaminationCommittee}} \\
+	\vspace{0.3cm}
+	{
+		\FontSn{ %
+		\begin{tabular}{rl}
+			\coverChairperson:    		& \ChairpersonName  			\\
+			\coverSupervisor:     		& \ExaminationSupervisorName   	\\
+			Member of the Committee:	& \CommitteeFirstMemberName 	\\
+										& \CommitteeSecondMemberName
+		\end{tabular} } \\
+	}
+
+	%Date of oral examination
+	\vspace{1.5cm}
+	{\FontMb{ \Month \& \Year }} \\ 
+	
+\end{center}

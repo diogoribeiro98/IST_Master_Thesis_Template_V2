@@ -1,0 +1,75 @@
+\chapter{How to use this template}
+\label{chapter:how_to_use_this_template}
+
+This template provides a carefully structured framework for the writing of a graduate level thesis. It is in accordance with the directives of Instituto Superior Técnico (University of Lisbon) but can be easily adapted for use in other institutions. The current version comes out of the joint effort of several former student's of the Engineering Physics Master's program: Diogo Ribeiro , André Cordeiro and Pedro Cosme.
+
+The following sections describe the structure of the template and how one can best make use of it.
+
+\section{Document structure}
+
+The Thesis template is separated into several files for easy editing. The \texttt{main.tex} file serves as the base document from where all other files are inserted. In the main folder, you will find 4 separate folders. 
+
+\subsection{The \texttt{/config} folder }
+
+The \texttt{config} folder contains two configuration files that should be edited with care:
+%
+\begin{itemize}
+	\item \texttt{thesis\_preamble.tex} -- Contains all packages required by the template as well as some useful ones for writing mathematical expressions, defining tables and including figures. It also contains the commands for setting up the thesis geometry and look.
+	
+	\item \texttt{my\_commands.tex} -- Contains used defined commands. The only default command there defined is the \texttt{\textbackslash redref} that inserts a '\redref' where you know you need to at a reference but still don't have it in the bibliography.
+\end{itemize}
+
+\subsection{The \texttt{/input} folder }
+
+After the document is configured, the actual writing can begin. In the \texttt{input} folder you will find several folders with several documents inside:
+
+\begin{itemize}
+	\item \texttt{/01\_Cover\_Page} -- Two possible cover templates exist inside this folder. They can be chosen by changing the associated file name in \texttt{main.tex}. Once chosen, you should edit the corresponding cover page file to fit your needs (name, course, ...)
+	
+	\item \texttt{/02\_Front\_Matter} -- The Front Matter of a thesis is composed of the Dedication, Acknowledgements, Abstract and Resumo files. In the dedication file you may dedicate the thesis to someone or write a quote. The Acknowledgements page allow you to acknowledge a funding grant, some organisation, or people whose importance to you and your work should be mentioned. The Abstract and Resumo pages should be essentially the same (albeit in different languages) and should contain a brief summary of your work.
+	
+	\item \texttt{/03\_Glossary\_and\_Nomenclature} -- The Glossary pages should contain important acronyms that you use throughout the thesis. You may also include mathematical symbols to form a Symbol page (uncomment the appropriate section in the \texttt{main.tex} file)
+	 
+	 \item \texttt{/04\_Chapters} -- The main writing happens inside this folder. Here you should create a separate file for each chapter. All chapter files should start with
+	 \subitem %
+	 %
+	 \vspace{-1cm}
+	 \begin{verbatim} 	\chapter{Chapter name}
+	 	\label{chapter:chapter_name}
+	 \end{verbatim}
+ 	 \vspace{-0.8cm}
+ 	%
+	as to allow you to refer to the chapter later down the writing.
+		
+	\item \texttt{/05\_Appendix} -- The appendix folder works in the same fashion as the chapter's folder. Separate files for each appendix should be created and edited.
+\end{itemize}
+
+\subsection{The \texttt{/figures} folder }
+%
+All graphics to be included in the main document should be placed inside this folder. We recommend separating the files to be included in separate folders according to the chapter they are to be place in. The second chapter of this template contains some examples of how to incorporate the graphics in the main text.
+
+\subsection{The \texttt{/bib} folder }
+
+The last folder to be mentioned is the \texttt{/bib} folder. Inside you will find the bibliography \texttt{bibliography.bib} file where all the references should be placed. Although the bibliography could be inside the \texttt{/input} folder, we choose to place it in it's own folder due to it's importance. The bibliography entries should have the following format:
+
+\begin{verbatim} 	
+@article{Einstein:1905ve,
+	author = "Einstein, Albert",
+	title = "{On the electrodynamics of moving bodies}",
+	doi = "10.1002/andp.200590006",
+	journal = "Annalen Phys.",
+	volume = "17",
+	year = "1905"
+}
+\end{verbatim}
+%
+and be cited with the \texttt{\textbackslash cite} command as \cite{Einstein:1905ve}.
+
+The easiest way to assure consistency with the formatting of each entry is to retrieve them from the same website (\href{https://inspirehep.net/}{InspireHEP}, \href{https://ui.adsabs.harvard.edu/}{NASA/ADS}, ... ).
+
+\section{Useful links}
+%
+To take the biggest advantage possible of this template it is useful to know the ins and outs \LaTeX. This usually takes time, but it is not a daunting task. For a start, the \href{https://www.overleaf.com/learn}{Overleaf website} contains some straightforward tutorials on how to edit Latex files. After the basics, Stackexchange can help you with more specific problems -- almost always there is someone else with a similar problem!
+
+Specific questions with the template and possible corrections can be mentioned in the Github repo.
+

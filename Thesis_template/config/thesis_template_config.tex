@@ -1,0 +1,121 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Language
+\usepackage[utf8]{inputenc} 			% Input encoding
+\usepackage[english]{babel} 			% English
+
+%Mathematics
+\usepackage{amsmath}					% American Mathematical Society Package
+\usepackage{amsfonts}					% Mathematical Fonts
+\usepackage{amssymb}					% More mathematical symbols
+\usepackage{mathtools}					% More control and better appearence of Mathematics
+
+%Figures and captions
+\usepackage{graphicx}					% More complex version of graphics for figures
+\usepackage{caption}					% More control over captions
+\usepackage{sidecap}					% Side captions (just in case)
+
+%ThE LooOks!
+\usepackage{fancyhdr}					% Fancy Headers
+\usepackage{geometry}					% Control geometry
+\usepackage{setspace}
+
+%Tables and other enviorements
+\usepackage{tabularx}					% Better tables
+\usepackage{booktabs}					% Even better tables
+\usepackage{enumitem}					% More control over enumerate enviorements
+\usepackage{arydshln}					% Use dashed lines in tables
+
+%Physics
+\usepackage{siunitx}					% SI units			
+\usepackage{physics}					% Usefull notations ( bras and kets for example)
+
+% Usefull Tools
+\usepackage{lipsum}						% Create random text
+\usepackage{comment}					% Create comments
+\usepackage{hyperref}					% Create hyperlinks
+\usepackage{xcolor} 					% Colors
+\usepackage{framed}						% Colored frames
+\usepackage{setspace}					% Control spaces
+\usepackage{listings}					% Add code snipets
+
+\usepackage[breakable,skins]{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Paper Geometry
+\geometry{
+		paper=a4paper, 	% A4 Paper
+		inner=3cm, 		% Inner margin
+		outer=3cm, 		% Outer margin
+		top=3.5cm, 		% Top margin
+		bottom= 3.5cm, 	% Bottom margin
+	}
+
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.1}
+
+%Use Computer Modern Bright font (san serif)
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{cmbright}
+
+%URL links setup
+\colorlet{url_blue}{blue!50!black}
+\hypersetup{
+	pdfpagemode			= {UseOutlines}	,
+	bookmarksopen		= true 			,
+	bookmarksopenlevel	= 0				,
+	hypertexnames		= false			,
+	colorlinks			= true			, % Set to false to disable coloring links
+	citecolor			= blue			, % The color of citations
+	linkcolor			= blue			, % The color of references to document (sections ,figures, etc)
+	urlcolor			=url_blue		, % The color of hyperlinks (URLs)
+	pdfstartview		={FitV}			,
+	breaklinks			=true,
+	unicode								,
+}
+
+%Set shaded color
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AKNOWLEDGMENT SECTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% new LaTeX variable name
+\newcommand{\acknowledgments}{@undefined} 
+\addto\captionsenglish{\renewcommand{\acknowledgments}{Acknowledgments}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOMENCLATURE AND GLOSSARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[acronym,nonumberlist,nomain,automake]{glossaries}
+\usepackage[acronyms,nonumberlist,nogroupskip]{glossaries}
+
+\newglossary{symbols}{sym}{sbl}{List of Symbols}
+\makenoidxglossaries
+\glsnoexpandfields
+
+\loadglsentries{./inputs/03_Glossary_and_Nomenclature/Thesis_Glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIO SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[numbers]{natbib}
+
+
+
+
+
+
